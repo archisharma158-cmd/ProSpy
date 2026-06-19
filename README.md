@@ -2,14 +2,14 @@
 
 ProSpy is an AI-powered fake profile detection system.
 
-##Team
+## Team
 -Archi Sharma
 -Parth Goyal
 
-##Goal
+## Goal
 Detect fake social media profiles using machine learning and cybersecurity indicators.
 
-##Features
+## Features
 -Followers Count
 -Following Count
 -Post Count
