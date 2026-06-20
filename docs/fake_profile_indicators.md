@@ -100,3 +100,5 @@ These features help distinguish fake and genuine accounts.
 ---
 
 ## 6. Conclusion
+
+The selected dataset contains relevant profile, content, and behaviour-based features suitable for training a fake account detection model.
