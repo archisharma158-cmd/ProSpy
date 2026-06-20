@@ -3,7 +3,7 @@
 ProSpy is an AI-powered fake profile detection system.
 
 ## Team
--Archi Sharma : Project Lead & Respository
+-Archi Sharma : Project Lead & Repository
 
 -Parth Goyal : Research Lead
 
