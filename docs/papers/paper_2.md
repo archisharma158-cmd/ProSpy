@@ -3,7 +3,8 @@
 **Title:** A Review on Social Bot Detection Techniques and Research Directions
 
 **Authors:** Arzum Karataş, Serap Şahin
-**Link:** https://www.researchgate.net/publication/322853694_A_Review_on_Social_Bot_Detection_Techniques_and_Research_Directions
+**Link:**
+https://www.researchgate.net/publication/322853694_A_Review_on_Social_Bot_Detection_Techniques_and_Research_Directions
 
 **Affiliation:** Department of Computer Engineering, Izmir Institute of Technology, Turkey
 
