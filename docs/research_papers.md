@@ -44,18 +44,20 @@ is_fake
 
 ## 4. Selected Features for ProSpy
 
-1. has_profile_pic
-2. bio_length
-3. username_randomness
-4. followers
-5. following
-6. follower_following_ratio
-7. account_age_days
-8. posts
-9. posts_per_day
-10. spam_comments_rate
-11. suspicious_links_in_bio
-12. verified
+| Feature                    | How it helps detect fake accounts |
+|---------------------------|------------------------------------|
+| has_profile_pic           | Fake accounts often use default or missing profile pictures, or stolen/random images. Real users are more likely to have personalized photos. |
+| bio_length                | Very short or empty bios can indicate low-effort or bot accounts; overly spammy bios can also be suspicious. |
+| username_randomness       | Random-looking usernames (e.g., many numbers/letters) often suggest auto-generated or bot-created accounts. |
+| followers                 | Extremely low or extremely high followers (without context) can signal fake or bought accounts. |
+| following                 | Bots often follow very large numbers of accounts to appear legitimate or to spam. |
+| follower_following_ratio  | A very low ratio (many following, few followers) is common in spam/bot accounts; balanced ratios are more typical of real users. |
+| account_age_days          | Newly created accounts are more likely to be fake or throwaway spam accounts. |
+| posts                     | Very few posts can indicate inactivity or newly created fake accounts; extremely high posting may indicate automation. |
+| posts_per_day             | Abnormally high posting rates often suggest automation or bot-like behavior. |
+| spam_comments_rate        | High proportion of spam-like comments is a strong indicator of malicious or fake activity. |
+| suspicious_links_in_bio   | Presence of phishing, affiliate spam, or shortened/masked links is a strong red flag for fake accounts. |
+| verified                  | Lack of verification alone doesn’t mean fake, but verified accounts are significantly less likely to be impersonators or bots. |
 
 Reason:
 These features help distinguish fake and genuine accounts.
