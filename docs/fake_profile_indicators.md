@@ -1,4 +1,5 @@
-#Fake Profile Indicators
+# Fake Profile Indicators
+
 | Indicator | Reason It May Suggest a Fake Profile |
 |-----------|--------------------------------------|
 | 1. Profile photo looks overly professional | Scammers and fake accounts often use stolen photos from models, influencers, or stock image websites. |
