@@ -1,70 +1,4 @@
-# ProSpy Research Document
-
-## 1. Project Objective
-Detect fake social media profiles using machine learning and profile behaviour analysis.
-
----
-
-## 2. Selected Dataset
-
-Dataset Name:
-Fake Social Media Account Detection Dataset
-
-Total Records:
-3000
-
-Platforms:
-Instagram, Facebook, Twitter
-
-Target Variable:
-is_fake
-
----
-
-## 3. Dataset Features
-
-- has_profile_pic
-- bio_length
-- username_randomness
-- followers
-- following
-- follower_following_ratio
-- account_age_days
-- posts
-- posts_per_day
-- caption_similarity_score
-- content_similarity_score
-- follow_unfollow_rate
-- spam_comments_rate
-- generic_comment_rate
-- suspicious_links_in_bio
-- verified
-
----
-
-## 4. Selected Features for ProSpy
-
-| Feature                    | How it helps detect fake accounts |
-|---------------------------|------------------------------------|
-| has_profile_pic           | Fake accounts often use default or missing profile pictures, or stolen/random images. Real users are more likely to have personalized photos. |
-| bio_length                | Very short or empty bios can indicate low-effort or bot accounts; overly spammy bios can also be suspicious. |
-| username_randomness       | Random-looking usernames (e.g., many numbers/letters) often suggest auto-generated or bot-created accounts. |
-| followers                 | Extremely low or extremely high followers (without context) can signal fake or bought accounts. |
-| following                 | Bots often follow very large numbers of accounts to appear legitimate or to spam. |
-| follower_following_ratio  | A very low ratio (many following, few followers) is common in spam/bot accounts; balanced ratios are more typical of real users. |
-| account_age_days          | Newly created accounts are more likely to be fake or throwaway spam accounts. |
-| posts                     | Very few posts can indicate inactivity or newly created fake accounts; extremely high posting may indicate automation. |
-| posts_per_day             | Abnormally high posting rates often suggest automation or bot-like behavior. |
-| spam_comments_rate        | High proportion of spam-like comments is a strong indicator of malicious or fake activity. |
-| suspicious_links_in_bio   | Presence of phishing, affiliate spam, or shortened/masked links is a strong red flag for fake accounts. |
-| verified                  | Lack of verification alone doesn’t mean fake, but verified accounts are significantly less likely to be impersonators or bots. |
-
-Reason:
-These features help distinguish fake and genuine accounts.
-
----
-
-## 5. Fake Profile Indicators
+#Fake Profile Indicators
 | Indicator | Reason It May Suggest a Fake Profile |
 |-----------|--------------------------------------|
 | 1. Profile photo looks overly professional | Scammers and fake accounts often use stolen photos from models, influencers, or stock image websites. |
@@ -99,6 +33,3 @@ These features help distinguish fake and genuine accounts.
 
 ---
 
-## 6. Conclusion
-
-The selected dataset contains relevant profile, content, and behaviour-based features suitable for training a fake account detection model.
