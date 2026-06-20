@@ -8,7 +8,7 @@
 
 **Journal:** JURNAL EMACS (Engineering, Mathematics and Computer Science), Vol. 4 No. 1
 
-**DOI:** 10.21512/emacsjournal.v4i1.8076
+**DOI:** https://doi.org/10.21512/emacsjournal.v4i1.8076
 
 ### Summary
 This paper presents a systematic literature review of machine learning techniques used for detecting fake Instagram accounts. The authors analyze previous studies, compare different machine learning algorithms, and evaluate their effectiveness in identifying fake profiles using Instagram metadata, image analysis, and Natural Language Processing (NLP). The review aims to determine the most accurate and efficient methods for fake account detection.
