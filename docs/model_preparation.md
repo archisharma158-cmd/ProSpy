@@ -9,6 +9,19 @@ The goal of this project is to classify a social media account as either **Fake*
 
 ---
 
+## Dataset Information
+
+**Dataset Name:**  
+Fake Social Media Account Detection Dataset
+
+**Total Records:**  
+`<actual count>`
+
+**Total Features:**  
+`<actual count>`
+
+---
+
 ## Input Features
 
 The model uses the following features:
@@ -81,7 +94,7 @@ The model uses the following features:
 | Training Data | 80% |
 | Testing Data | 20% |
 
-**Purpose:**
+**Purpose:**  
 The dataset is divided into training and testing sets to evaluate the model's performance on unseen data and measure its ability to generalize.
 
 ---
@@ -90,12 +103,12 @@ The dataset is divided into training and testing sets to evaluate the model's pe
 
 The following metrics are used to evaluate model performance:
 
-- **Accuracy**
-- **Precision**
-- **Recall**
-- **F1-Score**
+- Accuracy
+- Precision
+- Recall
+- F1-Score
 
-**Purpose:**
+**Purpose:**  
 These metrics help assess how effectively the model identifies fake accounts while minimizing false positives and false negatives.
 
 ---
@@ -118,7 +131,7 @@ Potential enhancements for improving model performance:
 - Hyperparameter Tuning
 - Feature Engineering
 - Cross Validation
-- Testing additional models such as:
+- Testing additional models:
   - XGBoost
   - Support Vector Machine (SVM)
 
