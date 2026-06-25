@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProSpy - Fake Profile Detector</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f9;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #1e3a8a;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background: #2563eb;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #1d4ed8;
+      }
+
+      #result {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>ProSpy</h1>
+      <p align="center">Fake Social Media Profile Detection</p>
+
+      <label>Profile Picture</label>
+      <select id="profilePic">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+
+      <label>Username Length</label>
+      <input type="number" id="usernameLength" />
+
+      <label>Numbers in Username</label>
+      <input type="number" id="usernameNums" />
+
+      <label>Full Name Words</label>
+      <input type="number" id="fullnameWords" />
+
+      <label>Numbers in Full Name</label>
+      <input type="number" id="fullnameNums" />
+
+      <label>Name Equals Username</label>
+      <select id="sameName">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+
+      <label>Description Length</label>
+      <input type="number" id="descriptionLength" />
+
+      <label>External URL</label>
+      <select id="externalURL">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+
+      <label>Private Account</label>
+      <select id="private">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+
+      <label>Number of Posts</label>
+      <input type="number" id="posts" />
+
+      <label>Followers</label>
+      <input type="number" id="followers" />
+
+      <label>Following</label>
+      <input type="number" id="following" />
+
+      <button onclick="detectProfile()">Analyze Profile</button>
+
+      <div id="result"></div>
+    </div>
+
+    <script>
+      function detectProfile() {
+        let score = 0;
+
+        if (document.getElementById("profilePic").value == 0) score++;
+
+        if (Number(document.getElementById("usernameNums").value) > 3) score++;
+
+        if (Number(document.getElementById("descriptionLength").value) < 10)
+          score++;
+
+        if (Number(document.getElementById("followers").value) < 50) score++;
+
+        if (Number(document.getElementById("following").value) > 500) score++;
+
+        if (Number(document.getElementById("posts").value) < 5) score++;
+
+        if (document.getElementById("sameName").value == 1) score++;
+
+        let result = document.getElementById("result");
+
+        if (score >= 4) {
+          result.innerHTML = "⚠️ Prediction: Likely Fake Account";
+          result.style.color = "red";
+        } else {
+          result.innerHTML = "✅ Prediction: Likely Genuine Account";
+          result.style.color = "green";
+        }
+      }
+    </script>
+  </body>
+</html>
